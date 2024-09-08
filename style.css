@@ -269,8 +269,9 @@ footer {
     }
 }
 
-/* Love Job Section */
-@media (max-width: 1024px) {
+
+ /* Love Job Section */
+ @media (max-width: 1024px) {
     .luv-job {
         flex-direction: column;
     }
@@ -280,7 +281,24 @@ footer {
     }
 
     .love-image {
-        height: 300px;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .love-image img {
+        width: 100%;
+        max-width: 500px; /* Restrict image size on larger screens */
+        height: auto;
+        border-radius: 10px; /* Optional for better appearance */
+    }
+}
+
+/* Mobile View (Below 768px) */
+@media (max-width: 768px) {
+    .love-image img {
+        max-width: 100%;
+        height: auto;
     }
 }
 
