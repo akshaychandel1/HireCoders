@@ -1,0 +1,302 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.sign-in {
+    border: 2px solid #28a745;
+    padding: 5px 15px;
+    border-radius: 15px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+.hero h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.h-1 
+{
+    margin-top: -20px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin: 7%;
+}
+
+.feature {
+    width: 30%;
+    text-align: center;
+    margin: 2px;
+}
+
+.feature img {
+    height: 180px;
+    margin-bottom: 20px;
+}
+
+.feature h2 {
+    /* color: #28a745; */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    margin: 2px;
+    font-size: 14px;
+}
+
+.join-team {
+    color: #fff;
+    background-color: #28a745;
+    margin: 30px 80px;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 20px;
+}
+
+.join-team h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.join-team p {
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.post-resume {
+    background-color: #fff;
+    color: #28a745;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.luv-job
+{
+    margin-top: 60px;
+    margin: 0 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.love-job , .love-image
+{
+    flex: 1;
+}
+.love-job {
+   margin-left: 80px;
+}
+
+
+.love-image
+{
+    display: flex;
+    justify-content: center;
+    height: 380px;
+}
+
+footer {
+    background-color: #141414;
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    max-width: 150px;
+}
+
+.footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h4 {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 8px;
+}
+
+.footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-column ul.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-column ul.social-icons li a {
+    font-size: 18px;
+    color: #00FF00; /* Example color for social icons */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Responsive */
+/* Adjusting navigation for smaller screens */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* Hero Section */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 18px;
+    }
+}
+
+/* Features Section */
+@media (max-width: 1024px) {
+    .features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Join Team Section */
+@media (max-width: 768px) {
+    .join-team {
+        margin: 20px;
+        padding: 30px 10px;
+    }
+
+    .join-team h2 {
+        font-size: 20px;
+    }
+
+    .join-team p {
+        font-size: 14px;
+    }
+}
+
+/* Love Job Section */
+@media (max-width: 1024px) {
+    .luv-job {
+        flex-direction: column;
+    }
+
+    .love-job {
+        margin-left: 0;
+    }
+
+    .love-image {
+        height: 300px;
+    }
+}
+
+/* Footer Adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-logo,
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-column {
+        margin-bottom: 20px;
+    }
+}
